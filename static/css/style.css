@@ -1,0 +1,186 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "hero hero hero"
+    "main main main"
+    "footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: .90em;
+  padding-bottom: .7em;
+  line-height: 1.7em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+
+
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+main {
+  grid-area: main;
+  margin: 2em 0;
+
+}
+
+
+.title {
+  text-align: center;
+}
+
+.call-to-action {
+  display: grid;
+  justify-content: center;
+}
+
+.contact-social ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-social li{
+  display: inline-block;
+  padding: 0 .5em;
+  font-size: 1.2em;
+}
+
+.contact-social ul a {
+  color: black;
+}
+
+.contact-social ul a:hover {
+  color: var(--blue-medium);
+}
+
+.contact-social ul a:active {
+  color: var(--blue-dark);
+}
+
+
+@media (min-width: 768px) {
+
+  body {
+    text-align: left;
+  }
+
+  main {
+    grid-area: main;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat (6, 1fr);
+    grid-template-rows: auto;
+
+  }
+
+  .col-12 {
+    grid-column: span 12;
+  }
+
+  .col-11 {
+    grid-column: span 11;
+  }
+  .col-10 {
+    grid-column: span 10;
+  }
+
+  .col-9 {
+    grid-column: span 9;
+  }
+
+  .col-8 {
+    grid-column: span 8;
+  }
+
+  .col-7 {
+    grid-column: span 7;
+  }
+
+  .col-6 {
+    grid-column: span 6;
+  }
+
+  .col-5 {
+    grid-column: span 5;
+  }
+
+  .col-4 {
+    grid-column: span 4;
+  }
+
+  .col-3 {
+    grid-column: span 3;
+  }
+
+  .col-2 {
+    grid-column: span 2;
+  }
+
+  .col-1 {
+    grid-column: span 1;
+  }
+
+  .contact-social li{
+    all: unset;
+    display: inline-block;
+    margin: 0;
+    padding: 0 .5em;
+    font-size: 1.5em;
+  }
+
+}
+
